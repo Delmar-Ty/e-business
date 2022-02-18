@@ -1,1 +1,50 @@
-/*Css*/
+/*CSS
+
+Colors {
+    Primary Blue: 0D98BA
+    Green: 1CAC78
+    Smoky Black: 100C08
+    Secondary Blue: 007BA7
+    Accent: CE8871
+    Ghost White: F8F8FF
+}
+
+Fonts {
+    Logo: Shadows Into Light, Indie Flower, Rock Salt
+    Title: Bungee, Bebas Neue, Ferdoka One
+}
+
+*/
+
+#nav-bar {
+    background-color: #100c08;
+}
+
+.navbar-brand {
+    font-family: 'Rock Salt', cursive;
+    color: #1cac78;
+    font-size: 2.5rem;
+}
+
+.navbar-brand:hover {
+    color: #1cac78;
+}
+
+.nav-link {
+    color: #f8f8ff;
+    font-size: 1.25rem;
+}
+
+#title-body {
+    background-color: #100c08;
+}
+
+#title {
+    color: #CE8871;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+}
+
+#title-para {
+    color: #f8f8ff;
+}
