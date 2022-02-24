@@ -16,35 +16,39 @@ Fonts {
 
 */
 
-#nav-bar {
+body {
+    background-color: #F8F8FF;
+}
+
+.navbar {
     background-color: #100c08;
+    font-size: 1.5rem;
+    box-shadow: 0px 15px 40px;
 }
 
 .navbar-brand {
+    font-size: 2.25rem;
+    color: #007ba7;
     font-family: 'Rock Salt', cursive;
-    color: #1cac78;
-    font-size: 2.5rem;
 }
 
 .navbar-brand:hover {
-    color: #1cac78;
+    color: #007ba7;
+}
+
+.bi-list {
+    color: #F8F8FF;
+    font-size: 2rem;
+}
+
+.navbar-toggler-icon {
+    stroke: #F8F8FF;
 }
 
 .nav-link {
-    color: #f8f8ff;
-    font-size: 1.25rem;
+    color: #F8F8FF;
 }
 
-#title-body {
-    background-color: #100c08;
-}
-
-#title {
-    color: #CE8871;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-}
-
-#title-para {
-    color: #f8f8ff;
+.nav-link:hover {
+    color: #007BA7;
 }
