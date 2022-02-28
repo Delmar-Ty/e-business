@@ -194,3 +194,16 @@ body {
 .modal-button:hover {
     background-color: #100c08;
 }
+
+.card {
+    border: none;
+}
+
+.star-container {
+    font-size: 1.25rem;
+    color: #D3AF37;
+}
+
+.product-name, .product-price {
+    color: #100c08;
+}
