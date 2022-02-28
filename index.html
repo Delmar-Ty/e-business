@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wave Skates</title>
+    <title>Western Leather</title>
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="assets/Media/fav-icon.png">
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,88 +21,199 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid row">
-        <a class="navbar-brand col" href="#">Wave Skates</a>
-        <div class="col text-end col-xs-12">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list"></i>
-          </button>
-          <div class="collapse navbar-collapse col justify-content-end" id="navbarTogglerDemo2">
-            <ul class="navbar-nav mb-2 mb-xl-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link"><i class="bi bi-person-fill"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link"><i class="bi bi-cart-fill"></i></a>
-              </li>
-            </ul>
-          </div>
+
+    <!--Navbar-->
+    <div class="container-fluid d-flex justify-content-center">
+      <a class="navbar-brand" href="index.html"><img src="assets/Media/Western-Leather-Logo.png" alt="logo" width="250" class="img-fluid"></a>
+    </div>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-sm-auto mb-2 mb-lg-0">
+            <li class="nav-item m-3">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item m-3">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item m-3">
+              <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill nav-profile"></i></a>
+            </li>
+            <li class="nav-item m-3">
+              <a href="" class="nav-link position-relative">
+                <i class="bi bi-cart-fill nav-profile">
+                </i>
+              </a>
+            </li>
+          </ul>    
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <a href="create-account.html">Create Account</a>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary modal-button">Log In</button>
+        </div>
+    </div>
+  </div>
+</div>
       </div>
     </nav>
 
-    <!--Products-->
+    <!--Two Main Cards-->
     <section>
-      <div class="row m-5 justify-content-center">
-        <div class="col-lg-3">
-          <div class="card">
-            <img src="assets/Media/placeholder.png" class="card-img-top" alt="card-img-top" id="product-one">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+      <div class="container-fluid m-auto row justify-content-center my-5">
+        <div class="col-10 col-lg-5 mb-5 mb-lg-0 me-0 me-lg-5 position-relative" id="card-one">
+          <div class="container cards-container">
+            <h1 class="main-cards-title text-center">Create an account to unlock access to future deals!</h1>
+            <div class="btn btn-lg btn-outline-dark"><a href="create-account.html" class="stretched-link" id="sign-up-link">Sign Up</a></div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card">
-            <img src="assets/Media/placeholder.png" class="card-img-top" alt="card-img-top" id="product-one">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+        <div class="col-10 col-lg-5 ms-0 ms-lg-5 position-relative" id="card-two">
+          <div class="container cards-container">
+            <h1 class="main-cards-title text-center">Shop our quality products now!</h1>
+          <div class="btn btn-lg btn-outline-dark"><a href="products.html" class="stretched-link" id="shop-now-link">Shop Now</a></div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card">
-            <img src="assets/Media/placeholder.png" class="card-img-top" alt="card-img-top" id="product-one">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
+      </div>
+    </section>
+
+    <!--Vision Statement-->
+    <section>
+      <div class="container-fluid" id="vision-statement">
+        <h1 class="vision-statement-text ms-5 my-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet!</h1>
+      </div>
+    </section>
+
+    <!--About-->
+    <section>
+      <h1 class="about-title">About</h1>
+      <p class="m-5 about-para">We are a small online business based in Glendale Arizona that create quality crafted leather goods. This business was established in February of 2022 and is family owned and operated.</p>
+    </section>
+
+    <!--FAQ-->
+    <section id="faq-section">
+      <div class="container-fluid row faq-container p-0 justify-content-center">
+        <div class="col-10 col-md-6 faq-title p-5 position-relative">
+          <h1 class="faq text-center position-absolute top-50 start-50 translate-middle">FAQ</h1>
         </div>
-        <div class="col-lg-3">
-          <div class="card">
-            <img src="assets/Media/placeholder.png" class="card-img-top" alt="card-img-top" id="product-one">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="col-10 col-md-6">
+          <div class="accordion accordion-flush p-0" id="accordionFlush">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Can I only buy your products online?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                  Yes, we're a small business that only sells our products online.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Do you ship internationally?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                  No, we do not ship internationally. More information about shipping can be found in our <a href="shipping-policy.html">Shipping Policy</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Are all your products genuine leather?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                  Yes, all our products are made from genuine, high quality leather.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Are the animals that get farmed for leather humanely raised?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse show" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                  Yes, we make sure to only get our supply of leather from farmers that have raised their animals humanely.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!---->
+    <!--Footer-->
+    <footer>
+      <div class="container-fluid row footer-container m-0 p-5 justify-content-center">
+        <div class="col-6 text-center">
+          <h3>Policies</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="privacy-policy.html">Privacy Poilcy</a></li>
+            <li class="list-group-item"><a href="terms&conditions.html">Terms & Conditions</a></li>
+            <li class="list-group-item"><a href="refunds&returns.html">Refunds & Returns Policy</a></li>
+            <li class="list-group-item"><a href="shipping-policy.html">Shipping Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-6 text-center">
+          <h3>Info</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="contact.html">Contact</a></li>
+            <li class="list-group-item">Social Media</li>
+            <li class="list-group-item social-media">
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a href="index.html"><img src="assets/Media/Western-Leather-Logo.png" alt="logo" width="250" class=""></a>
+        </div>
+        <p class="footer-copyright text-center mt-5">Western Leather copyright&COPY; 2022</p>
+      </div>
+    </footer>
 
     <!--Custom JavaScript-->
     <script src="assets/JavaScript/script.js"></script>
