@@ -207,3 +207,13 @@ body {
 .product-name, .product-price {
     color: #100c08;
 }
+
+.add-to-cart {
+    background-color: #D3AF37;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #100c08;
+    color: white;
+}
