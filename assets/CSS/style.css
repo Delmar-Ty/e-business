@@ -208,9 +208,15 @@ body {
     color: #100c08;
 }
 
-.add-to-cart {
+.add-to-cart, .checkout-btn {
     background-color: #D3AF37;
     color: white;
+    border-color: #D3AF37;
+}
+
+.checkout-btn:hover {
+    background-color: #100c08;
+    border-color: #100c08;
 }
 
 .add-to-cart:hover {
@@ -218,6 +224,12 @@ body {
     color: white;
 }
 
-#product-image-main {
-    transform: translate(25%);
+.product-images-container > .col-3 > img {
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.product-images-container > .col-3 > img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
 }
