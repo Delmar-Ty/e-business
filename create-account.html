@@ -19,11 +19,69 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
-    <!--Header-->
-    <nav>
-        <div class="container-fluid d-flex justify-content-center">
-            <a class="navbar-brand" href="index.html"><img src="assets/Media/Western-Leather-Logo.png" alt="logo" width="250" class="img-fluid"></a>
+    <!--Navbar-->
+    <div class="container-fluid d-flex justify-content-center">
+      <a class="navbar-brand" href="index.html"><img src="assets/Media/Western-Leather-Logo.png" alt="logo" width="250" class="img-fluid"></a>
+    </div>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-sm-auto mb-2 mb-lg-0">
+            <li class="nav-item m-3">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item m-3">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item m-3">
+              <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill nav-profile"></i></a>
+            </li>
+            <li class="nav-item m-3">
+              <a href="" class="nav-link position-relative">
+                <i class="bi bi-cart-fill nav-profile">
+                </i>
+              </a>
+            </li>
+          </ul>    
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <a href="create-account.html">Create Account</a>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary modal-button">Log In</button>
+        </div>
+    </div>
+  </div>
+</div>
+      </div>
     </nav>
     
     <!--Create Account Form-->

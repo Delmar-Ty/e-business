@@ -233,3 +233,22 @@ body {
     cursor: pointer;
     transform: scale(1.3);
 }
+
+#product-image-main:hover {
+    cursor: pointer;
+}
+
+.img-magnifier-container {
+    position: relative;
+  }
+  
+  .img-magnifier-glass {
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
