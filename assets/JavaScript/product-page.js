@@ -1,18 +1,4 @@
-const file = 'assets/JSON/product-data.json';
 let products = document.querySelector('.product-container');
-const storageName = "product-data";
-
-//This fetches the data
-async function getData(resource) {
-    let response = await fetch(resource);
-    let data = await response.json();
-    return data;
-}
-
-//Saves data to local storage and parses data
-function saveData(name = "list", data) {
-    localStorage.setItem(name, JSON.stringify(data));
-}
 
 //Creates product cards according to data in local storage
 function init() {
@@ -42,19 +28,12 @@ function init() {
     products.innerHTML = productArray;
     let children = products.children;
     for (const element of children) {
-        element.addEventListener('click', function() {
+        element.addEventListener('click', () => {
             //Call function to assign a search parameter
         });
     }
 }
 
-//Checks if data already exists in local storage
-if (localStorage.getItem(storageName) === null) {
-getData(file)
-    .then(data => {
-        saveData(storageName, data);
-        init();
-    });
-} else {
+document.addEventListener('init', () => {
     init();
-}
+});
