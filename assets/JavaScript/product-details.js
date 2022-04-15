@@ -1,25 +1,25 @@
-var imgIDArray = ['product-image', 'product-image-2', 'product-image-3', 'product-image-4'];
+// var imgIDArray = ['product-image', 'product-image-2', 'product-image-3', 'product-image-4'];
 function changeImage() {
     var img = this.getAttribute('src');
     document.getElementById('product-image-main').setAttribute('src', img);
     magnify('product-image-main', 3);
 }
 
-function addToCart() {
-    var productName = document.getElementById('name').textContent;
-    var productPrice = document.getElementById('price').textContent;
-    var productPriceNum = productPrice.slice(1);
-    productPriceNum = parseFloat(productPriceNum);
-    console.log(typeof(productPriceNum));
-    var tax = parseFloat(productPriceNum) * 0.1;
-    console.log(typeof(tax));
-    var total = productPriceNum + tax;
-    console.log(total);
-    document.getElementById('modal-name').textContent = productName;
-    document.getElementById('modal-price').textContent = productPrice;
-    document.getElementById('tax').textContent = '$' + tax.toFixed(2);
-    document.getElementById('total').textContent = '$' + total.toFixed(2);
-}
+// function addToCart() {
+//     var productName = document.getElementById('name').textContent;
+//     var productPrice = document.getElementById('price').textContent;
+//     var productPriceNum = productPrice.slice(1);
+//     productPriceNum = parseFloat(productPriceNum);
+//     console.log(typeof(productPriceNum));
+//     var tax = parseFloat(productPriceNum) * 0.1;
+//     console.log(typeof(tax));
+//     var total = productPriceNum + tax;
+//     console.log(total);
+//     document.getElementById('modal-name').textContent = productName;
+//     document.getElementById('modal-price').textContent = productPrice;
+//     document.getElementById('tax').textContent = '$' + tax.toFixed(2);
+//     document.getElementById('total').textContent = '$' + total.toFixed(2);
+// }
 
 function magnify(imgID, zoom) {
     var img, glass, w, h, bw;
@@ -90,9 +90,69 @@ function magnify(imgID, zoom) {
     }
   }
 
-for (i = 0; i < imgIDArray.length; i++) {
-    document.getElementById(imgIDArray[i]).addEventListener('click', changeImage);
+document.querySelector('.checkout-btn').addEventListener('click', function() {location.assign('../create-account.html')});
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+const tax = 10;
+
+//Gets the id from the url searh parameter
+function getSearchParam() {
+  let searchParam = new URLSearchParams(location.search);
+  let id = searchParam.get('id');
+  return id;
 }
 
-document.querySelector('.add-to-cart').addEventListener('click', addToCart);
-document.querySelector('.checkout-btn').addEventListener('click', function() {location.replace('../create-account.html')});
+//Returns an object with all the elements needed to update content
+function getContent() {
+  let elements = {
+    modal: {
+      title: document.querySelector('.product-modal-title'),
+      name: document.querySelector('#modal-name'),
+      tax: document.querySelector('#tax'),
+      total: document.querySelector('#total'),
+      img: document.querySelector('.modal-image')
+    },
+    body: {
+      imgsContainer: document.querySelector('.product-images-container'),
+      imgMain: document.querySelector('#product-image-main'),
+      description: document.querySelector('#info'),
+      price: document.querySelector('#price'),
+      name: document.querySelector('#name')
+    }
+  };
+  return elements;
+}
+
+//Updates all content on the page
+function updateContent() {
+  let id = getSearchParam();
+  let elements = getContent();
+  const data = JSON.parse(sessionStorage.getItem(storageName));
+  elements.body.name.textContent = data[id].name;
+  elements.body.price.textContent = `$${data[id].price.toFixed(2)}`;
+  elements.body.imgMain.setAttribute('src', `assets/Media/${data[id].images[0]}`);
+  elements.body.imgMain.setAttribute('alt', data[id].name);
+  elements.body.description.textContent = data[id].description;
+  elements.modal.img.setAttribute('src', `assets/Media/${data[id].images[0]}`);
+  elements.modal.name.textContent = data[id].name;
+  elements.modal.tax.textContent = `${tax}%`;
+  let total = data[id].price + (data[id].price * (1 / tax));
+  elements.modal.total.textContent = `$${total.toFixed(2)}`;
+  let images = [];
+  for (const i in data[id].images) {
+    let html = `
+    <div class="col-3">
+      <img src="assets/Media/${data[id].images[i]}" alt="${data[id].name}" class="img-fluid" id="product-image">
+    </div>
+    `;
+    images.push(html);
+  }
+  elements.body.imgsContainer.innerHTML = images.join('');
+}
+
+document.addEventListener('init', () => {
+  updateContent();
+})
