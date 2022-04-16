@@ -1,8 +1,63 @@
 [
     {
-        "name": "William Tradesman Front Pocket Wallet American Bison Leather",
+        "name": "Tradesman Wallet",
         "price": 125.00,
-        "description": "3-1/4 X 4 American Bison Leather Top Grain Leather and Poly-Cotton Twill Black Lining 6 Card Hold Pockets Cow Logo Designed in Eugene, Oregon Manufactured by Worldwide Artisans in Kowloon, Hong Kong",
+        "description": "Inclement weather is someone else’s problem when you carry our Fern Duffle. This sturdy canvas duffle bag combines water-resistant wax coated canvas and full-grain oil tanned leather. It’s designed with a storm flap with quick access metal-cased speed clips that reveal a heavy gauge #10 YKK brass zipper. Travel with confidence – your gear will be secure and protected no matter the conditions.",
         "images": ["tradesman-bison-leather-wallet-open.jpg", "tradesman-bison-leather-wallet-open-2.jpg", "tradesman-bison-leather-wallet-side.jpg", "tradesman-bison-leather-wallet-top.jpg"]
+    },
+    {
+        "name": "Fern Duffle",
+        "price": 275.00,
+        "description": "Inclement weather is someone else’s problem when you carry our Fern Duffle. This sturdy canvas duffle bag combines water-resistant wax coated canvas and full-grain oil tanned leather. It’s designed with a storm flap with quick access metal-cased speed clips that reveal a heavy gauge #10 YKK brass zipper. Travel with confidence – your gear will be secure and protected no matter the conditions.",
+        "images": ["fern-duffle-front-side.jpg", "fern-duffle-other-side.jpg", "fern-duffle-front.jpg", "fern-duffle-top-open.jpg"]
+    },
+    {
+        "name": "Lennon Backpack",
+        "price": 295.00,
+        "description": "The rugged, adventure-ready Lennon Backpack is structurally sturdy for the wear-everyday nomad. Using a washed cotton canvas and legacy leather, it features a padded back for comfortable wear and adjustable shoulder straps that make it fit like a glove. Whether you’re heading out for a hike or taking a quick weekend trip, this backpack has plenty of space for all your needs.",
+        "images": ["lennon-backpack-front.jpg", "lennon-backpack-side-one.jpg", "lennon-backpack-side-two.jpg", "lennon-backpack-person.jpg"]
+    },
+    {
+        "name": "Winslow Belt",
+        "price": 110.00,
+        "description": "An everyday belt that pairs perfectly with your favorite jeans, the Winslow Belt is constructed using the highest-grade materials for belts. Featuring a heavy-weight, Italian full-grain vegetable-tanned leather, the Winslow is built to stand the test of time.",
+        "images": ["winslow-belt-one.jpg", "winslow-belt-two.jpg"]
+    },
+    {
+        "name": "William Slim Breifcase",
+        "price": 995.00,
+        "description": "Handcrafted with full grain vegetable tanned Italian leather, our William Slim Briefcase is a classic, timeless piece that will never go out of style. This briefcase has ample features, including a double handle and a convenient detachable, adjustable leather shoulder strap for added comfort. The Slim Briefcase is designed to last a lifetime and we've used a heavy gauge stitch to withstand the wear and tear from daily use, in and out of the boardroom. An internal organizational pocket allows for easy access to your contents, and a solid brass turn lock secures the front flap down in place between meetings.",
+        "images": ["slim-breifcase-front.jpg", "slim-breifcase-back.jpg", "slim-breifcase-front-side.jpg", "slim-breifcase-top-open.jpg"]
+    },
+    {
+        "name": "Kent Leather Messenger",
+        "price": 450.00,
+        "description": "Inspired by the Pacific Northwest, the Kent Leather Messenger was designed for those who need function without compromising quality and beauty. Made from our legacy leather, the Kent features a snap interior closure and side rain flaps, safeguarding your belongings from wet days and falling out. With plenty of room for a computer, tablet and work files, you’ve got a whole new reason to go to work. An integrated trolley sleeve and an all leather strap enable easy travel through the airport and beyond.",
+        "images": ["kent-messenger-front.jpg", "kent-messenger-front-side.jpg", "kent-messenger-back.jpg", "kent-messenger-top-open.jpg"]
+    },
+    {
+        "name": "Desmond Travel Kit",
+        "price": 195.00,
+        "description": "Travel in style with the Desmond Leather Travel Kit, our most popular travel kit. The Desmond carries your essentials in a large water resistant central pocket and several interior compartments to stay organized. We have expertly constructed the interior with all around padding and extended the side straps to easily carry around wherever you go.",
+        "images": ["desmond-travel-kit-front.jpg", "desmond-travel-kit-side.jpg", "desmond-travel-kit-top.jpg", "desmond-travel-kit-open.jpg"]
+    },
+    {
+
+        "name": "Luggage Tag",
+        "price": 60.00,
+        "description": "Mark your bag in style with the William Leather Luggage Tag. Featuring a leather sleeve and mesh ID pocket, the William Leather Tag is the perfect accessory for one of our lifetime-guaranteed bags. Made with certified Italian Tuscan Leather and featuring a debossed cow logo.",
+        "images": ["luggage-tag-front.jpg", "luggage-tag-open.jpg", "luggage-tag-back.jpg"]
+    },
+    {
+        "name": "Wren Keychain",
+        "price": 30.00,
+        "description": "Rugged and durable, the Wren Keychain has an antique brass swivel clasp and comes in one of our six signature leather colors. Our most popular keychain will keep your keys easily within reach and with on-point style.",
+        "images": ["wren-keychain.jpg"]
+    },
+    {
+        "name": "Leather Solution",
+        "price": 30.00,
+        "description": "Protect your investment with our specially-formulated All-In-One Leather Solution and ensure the look and texture of your leather collection for a lifetime. Not only will it clean and condition, our solution resists soiling and water spots. Buffed to luster, it keeps your leather attractive and supple, penetrating the leather to get dirt and grime out and boosting the life of the leather with special oils and conditioners. Regular care and cleaning will add tremendously to the life of your leather.",
+        "images": ["leather-solution-bottle.jpg", "leather-solution-pour.jpg", "leather-solution-wipe.jpg", "leather-solution-background.jpg"]
     }
 ]

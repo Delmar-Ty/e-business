@@ -1,25 +1,8 @@
-// var imgIDArray = ['product-image', 'product-image-2', 'product-image-3', 'product-image-4'];
-function changeImage() {
-    var img = this.getAttribute('src');
-    document.getElementById('product-image-main').setAttribute('src', img);
+function changeImage(el) {
+    let source = el.getAttribute('src');
+    document.getElementById('product-image-main').setAttribute('src', source);
     magnify('product-image-main', 3);
 }
-
-// function addToCart() {
-//     var productName = document.getElementById('name').textContent;
-//     var productPrice = document.getElementById('price').textContent;
-//     var productPriceNum = productPrice.slice(1);
-//     productPriceNum = parseFloat(productPriceNum);
-//     console.log(typeof(productPriceNum));
-//     var tax = parseFloat(productPriceNum) * 0.1;
-//     console.log(typeof(tax));
-//     var total = productPriceNum + tax;
-//     console.log(total);
-//     document.getElementById('modal-name').textContent = productName;
-//     document.getElementById('modal-price').textContent = productPrice;
-//     document.getElementById('tax').textContent = '$' + tax.toFixed(2);
-//     document.getElementById('total').textContent = '$' + total.toFixed(2);
-// }
 
 function magnify(imgID, zoom) {
     var img, glass, w, h, bw;
@@ -64,7 +47,7 @@ function magnify(imgID, zoom) {
       if (y < h / zoom) {y = h / zoom;}
       /* Set the position of the magnifier glass: */
       glass.style.left = x + img.width / 2 + "px";
-      glass.style.top = y + img.height + "px";
+      glass.style.top = y + img.height / 2 + "px";
       /* Display what the magnifier glass "sees": */
       glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
     }
@@ -144,7 +127,7 @@ function updateContent() {
   let images = [];
   for (const i in data[id].images) {
     let html = `
-    <div class="col-3">
+    <div class="col-3 img-container">
       <img src="assets/Media/${data[id].images[i]}" alt="${data[id].name}" class="img-fluid" id="product-image">
     </div>
     `;
@@ -153,6 +136,17 @@ function updateContent() {
   elements.body.imgsContainer.innerHTML = images.join('');
 }
 
+function imgEvents() {
+  let imageContainers = document.querySelectorAll('.img-container');
+  imageContainers.forEach(el => {
+    el.addEventListener('click', function() {
+      changeImage(this.children[0]);
+    });
+  });
+}
+
 document.addEventListener('init', () => {
   updateContent();
+  imgEvents();
+  magnify('product-image-main', 3);
 })
